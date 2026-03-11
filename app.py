@@ -8,8 +8,10 @@ from groq import Groq
 # Load API key
 load_dotenv()
 
+print("API KEY:", os.getenv("GROQ_API_KEY"))
+
 client = Groq(
-    api_key=os.getenv("GROK_API_KEY")
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
 st.set_page_config(page_title="CIVIGUARD AI", layout="wide")
